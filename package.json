@@ -48,5 +48,9 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
     "prettier": "^2.6.2"
-  }
+  },
+  "description": "## Description L'application est le site d'une agence evenementielle. ## Pre-requis - NodeJS  >= v16.14.1",
+  "main": ".eslintrc.js",
+  "author": "",
+  "license": "ISC"
 }
