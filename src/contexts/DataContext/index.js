@@ -23,7 +23,7 @@ export const DataProvider = ({ children }) => {
   const getData = useCallback(async () => {
     try {
       const dataEvent = await api.loadData();
-      const lastIndexEvent = Math.max(...dataEvent.events.map(event=>event.id));
+      const lastIndexEvent = (dataEvent.events)?(Math.max(...dataEvent.events.map(event=>event.id))):undefined;
       setData(dataEvent);
       setLast(dataEvent.events.filter((event)=>event.id===lastIndexEvent)[0]);
     } catch (err) {
